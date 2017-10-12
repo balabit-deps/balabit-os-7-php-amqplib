@@ -1,0 +1,106 @@
+php-amqplib (2.7.0-1) unstable; urgency=medium
+
+  * Update Standards-Version to 4.1.1
+
+ -- David Prévot <taffit@debian.org>  Thu, 12 Oct 2017 08:22:17 -1000
+
+php-amqplib (2.6.3-1) unstable; urgency=medium
+
+  [ Todoshchenko Andrey ]
+  * float timeout for socket
+  * float timeout for stream
+
+  [ John Kelly ]
+  * Verify read_write_timeout is at least 2x the heartbeat (if set)
+  * Fix issue with declaring an exchange with a closed connection
+  * Update phpdocs
+
+  [ Giulio Calore ]
+  * catch the ErrorException thrown by the custom error handler in all the
+    places we are using it, to restore the previous error handler
+
+  [ David Prévot ]
+  * Update Standards-Version to 3.9.8
+
+ -- David Prévot <taffit@debian.org>  Fri, 15 Apr 2016 09:49:36 -0400
+
+php-amqplib (2.6.2-1) unstable; urgency=medium
+
+  [ Bruno Escudeiro ]
+  * Disable heartbeat when closing connection
+
+  [ Alex Salt ]
+  * AMQPReader::wait() throw IOWaitException on stream_select failure
+
+  [ John Kelly ]
+  * Update changelog
+
+  [ Alex Vasilenko ]
+  * yet another lazy connection
+
+  [ David Prévot ]
+  * Build with recent pkg-php-tools for the PHP 7.0 transition
+
+ -- David Prévot <taffit@debian.org>  Wed, 09 Mar 2016 17:58:50 -0400
+
+php-amqplib (2.6.1-1) unstable; urgency=medium
+
+  [ John Kelly ]
+  * The start of a changelog
+  * Make changes for new maintainers and package
+  * Add replaces to composer
+
+  [ David Prévot ]
+  * Adapt to new php-amqplib namespace
+  * Ship README.md now back
+  * Update Standards-Version to 3.9.7
+
+ -- David Prévot <taffit@debian.org>  Sat, 13 Feb 2016 13:03:25 -0400
+
+php-amqplib (2.6.0-1) unstable; urgency=medium
+
+  [ Jon Dufresne ]
+  * Add .gitattributes to slim down composer packages.
+
+  [ David Prévot ]
+  * Adapt packaging to removed tests and documentation
+
+ -- David Prévot <taffit@debian.org>  Fri, 23 Oct 2015 16:19:48 -0400
+
+php-amqplib (2.5.2-1) unstable; urgency=medium
+
+  [ Alvaro Videla ]
+  * adds basiq_qos example
+
+ -- David Prévot <taffit@debian.org>  Sat, 29 Aug 2015 14:14:11 -0400
+
+php-amqplib (2.5.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- David Prévot <taffit@debian.org>  Tue, 16 Jun 2015 10:06:08 -0400
+
+php-amqplib (2.5.0-2) unstable; urgency=medium
+
+  * Upload to unstable since Jessie has been released
+
+ -- David Prévot <taffit@debian.org>  Fri, 15 May 2015 11:00:37 -0400
+
+php-amqplib (2.5.0-1) experimental; urgency=medium
+
+  * Upload to experimental to respect the freeze
+  * Provide homemade autoload.php
+
+ -- David Prévot <taffit@debian.org>  Tue, 24 Feb 2015 19:28:28 -0400
+
+php-amqplib (2.4.1-1) unstable; urgency=medium
+
+  * Refresh patches
+
+ -- David Prévot <taffit@debian.org>  Fri, 24 Oct 2014 09:48:45 -0400
+
+php-amqplib (2.4.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #763828)
+
+ -- David Prévot <taffit@debian.org>  Thu, 02 Oct 2014 21:11:12 -0400
